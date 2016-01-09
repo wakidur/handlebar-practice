@@ -88,7 +88,8 @@
                 <div class="panel panel-primary">
                     <div class="panel-heading">Panel heading without title</div>
                     <div class="panel-body">
-                        <h1>Hello world</h1>
+                        <h1>Hello world looking line </h1>
+                        <p> how quickly daft umping we are here for you </p>
                     </div>
                    <div class="panel-footer"><p>&copy; 2016 wakidur</p></div>
                 </div>
