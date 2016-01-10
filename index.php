@@ -1,3 +1,4 @@
+<?php include 'hbTemplate/hbtemplate.php';?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -89,6 +90,8 @@
                     <div class="panel-heading">Panel heading without title</div>
                     <div class="panel-body">
                         <h1>Hello world</h1>
+                        <!-- Insertion point for handlebars template -->
+                        <div id="main" style="margin-left:100px">
                     </div>
                    <div class="panel-footer"><p>&copy; 2016 wakidur</p></div>
                 </div>
@@ -128,7 +131,10 @@
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="js/jquery-1.11.3.js"></script>
     <script src="js/bootstrap.js"></script>
+    <script src="lib/handlebars-v4.0.5.js"></script>
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <script src="js/ie10-viewport-bug-workaround.js"></script>
+    <script src="js/script.js"></script>
+    
 </body>
 </html>
