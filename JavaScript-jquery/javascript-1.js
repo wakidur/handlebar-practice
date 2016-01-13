@@ -23,5 +23,20 @@ var w = adding( 1254, 800 );
 console.log( w  );
 
 
+// Sample program 4
+function main() {
+    var a,b,c;
+        a = 5;
+        b = 6;
+        c = mull( a , b);
+        return c;
+}
+console.log( main() );
+function mul( a , b){
+    var multiple; 
+       multiple = a * b;
+       return ( multiple );
+}
+
 
 
