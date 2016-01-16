@@ -32,7 +32,7 @@ function main() {
         return c;
 }
 console.log( main() );
-function mul( a , b){
+function mull( a , b){
     var multiple; 
        multiple = a * b;
        return ( multiple );
