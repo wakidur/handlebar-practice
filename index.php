@@ -92,6 +92,9 @@
                         <h1>Hello world</h1>
                         <!-- Insertion point for handlebars template -->
                         <div id="main" style="margin-left:100px">
+                        <hr>
+                        <div id="content-placeholder"></div>
+                         <div id="locationIp"></div>
                     </div>
                    <div class="panel-footer"><p>&copy; 2016 wakidur</p></div>
                 </div>

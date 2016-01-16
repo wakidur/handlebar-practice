@@ -36,4 +36,28 @@ $( function() {
         });
         }
     });
+});
+$( function() {
+   
+    $.ajax({
+        method: "GET",
+        url: "data/code.json",
+        dataType: "json",
+        success: function(data){
+            var source   = $("#some-template").html(),
+                template = Handlebars.compile(source);
+            $("#content-placeholder").html(template(data));    
+        }
+    });
+    $.ajax({
+        method: "GET",
+        url: "data/location.json",
+        dataType: "json",
+        success: function(data){
+            var source   = $("#location-address").html(),
+                template = Handlebars.compile(source);
+            $("#locationIp").html(template(data));    
+        }
+    });
+    
 })
