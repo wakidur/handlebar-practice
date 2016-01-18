@@ -1,3 +1,4 @@
+<?php include 'hbTemplate/hbtemplate.php';?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -17,7 +18,7 @@
 
     <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
     <!--[if lt IE 9]><script src="js/ie8-responsive-file-warning.js"></script><![endif]-->
-    <script src="js/ie-emulation-modes-warning.js"></script>
+    <script src="lib/ie-emulation-modes-warning.js"></script>
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
@@ -79,8 +80,8 @@
           </ul>
         </li>
       </ul>
-    </div><!-- /.navbar-collapse -->
-  </div><!-- /.container-fluid -->
+    </div>
+  </div>
 </nav>
     <div class="container">
         <div class="row">
@@ -88,14 +89,31 @@
                 <div class="panel panel-primary">
                     <div class="panel-heading">Panel heading without title</div>
                     <div class="panel-body">
+
                         <h1>Hello world looking line </h1>
                         <p> how quickly daft umping we are here for you </p>
-                    </div>
-                   <div class="panel-footer"><p>&copy; 2016 wakidur</p></div>
+
+                        <h1>Hello world</h1>
+                        <!-- Insertion point for handlebars template -->
+                        <div id="main" style="margin-left:100px"></div>
+                        <hr>
+                        <div id="content-placeholder"></div>
+                        <hr>
+                        <div id="locationIp"></div>
+                        <hr>
+                        <div id="peopleName"></div>
+                        <hr>
+                        <div id="studentInfo"></div>
+                          
+                        
+
+                    
+                       <div class="panel-footer"><p>&copy; 2016 wakidur</p></div>
                 </div>
              </div>
         </div>            
     </div>
+  </div>
         
     
     
@@ -127,9 +145,12 @@
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
-    <script src="js/jquery-1.11.3.js"></script>
-    <script src="js/bootstrap.js"></script>
+    <script src="lib/jquery-1.11.3.js"></script>
+    <script src="lib/bootstrap.js"></script>
+    <script src="lib/handlebars-v4.0.5.js"></script>
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-    <script src="js/ie10-viewport-bug-workaround.js"></script>
+    <script src="lib/ie10-viewport-bug-workaround.js"></script>
+    <script src="js/script.js"></script>
+    
 </body>
 </html>

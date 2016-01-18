@@ -1,0 +1,10 @@
+{
+	"people" : [
+		{ "name" : "Alan" },
+		{ "name"  : "Allliso" },
+		{"name" : "Ryan"},
+		{"name" : "hello"}
+	],
+	"group" : "Bloggers"
+
+}

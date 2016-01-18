@@ -1,0 +1,43 @@
+
+{   
+    "name" : "Wakidur",
+    "place_id":"9522199",
+    "licence":"Data © OpenStreetMap contributors, ODbL 1.0. http:\/\/www.openstreetmap.org\/copyright",
+    "osm_type":"node",
+    "osm_id":"965993073",
+    "lat":"54.982375",
+    "lon":"9.283268",
+    "display_name":" 6, Bredhøjvej, Bolderslev, Aabenraa Municipality, Region of Southern Denmark, 6392, Denmark",
+    "address":[
+            {
+                "house_number":"6",
+                "road":"Bredhøjvej",
+                "village":"Bolderslev",
+                "county":"Aabenraa Municipality",
+                "state":"Region of Southern Denmark",
+                "postcode":"6392",
+                "country":"Denmark",
+                "country_code":"dk"
+            },
+            {
+                "house_number":"6",
+                "road":"Bredhøjvej",
+                "village":"Bolderslev",
+                "county":"Aabenraa Municipality",
+                "state":"Region of Southern Denmark",
+                "postcode":"6392",
+                "country":"Denmark",
+                "country_code":"dk"
+            },
+            {
+                "house_number":"6",
+                "road":"Bredhøjvej",
+                "village":"Bolderslev",
+                "county":"Aabenraa Municipality",
+                "state":"Region of Southern Denmark",
+                "postcode":"6392",
+                "country":"Denmark",
+                "country_code":"dk"
+            }
+        ]
+   }

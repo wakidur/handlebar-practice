@@ -26,10 +26,12 @@ function calculateArea(height, width, shape) {
 
 // Making JavaScript Object-Oriented
 var myObject = new Object();
-myObject.id = 100;
+    myObject.id = 100;
 
 // Another common approach to creating an object 
-var myObject = {id: 100};
+var myObject = {
+    id: 100
+};
 var objectId = myObject.id;
 
 // Defining Constructors

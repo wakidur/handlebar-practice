@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="images/favicon.ico">
+
+    <title>Handlebar-Practice</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <style type="text/css">
+		.style='border: 1px solid #81B411;border-collapse: collapse;width: 34%;' border='1'
+		.tblBorder
+		{
+		  border: 1px solid #81B411;
+		  border-collapse: collapse;width: 34%;'
+		}
+		.tblTr
+		{
+		background-color: #81B411;
+		}
+</style>
+</head>
+<body>  
+	<div class="container">
+	    <div class="row">
+	    	<div class="col-sm-12">
+	    		<div class="panel panel-primary">
+                    <div class="panel-heading">Panel heading without title</div>
+                    <div class="panel-body">
+
+                        <h1>Convert JSON to Javascript</h1>
+                        <div id="tableContainer"></div>
+                    </div>
+                    <div class="panel-footer"><p>&copy; 2016 wakidur</p></div>
+                </div>
+            </div> 
+	    </div>
+	</div>
+	
+		 
+	  <script src="lib/jquery-1.11.3.js"></script>
+	  <script src="js/data-script.js"></script>
+	<script type="text/javascript">
+	   // Symbols:
+       //JSON.stringify({ x: undefined, y: Object, z: Symbol('') });
+  //      JSON.parse(
+  //      	         '{
+  //      	         	"1": 1, 
+  //      	         	"2": 2, 
+  //      	         	"3": {
+  //      	         		"4": 4,
+  //      	         		 "5": {
+  //      	         		 	"6": 6
+  //      	         		 }
+  //      	         		}
+  //      	         	}', function(k, v) {
+		//     console.log(k); // log the current property name, the last is "".
+		//     return v;       // return the unchanged property value.
+		// });
+         
+        // window.onload = function what() {
+        //     var jsonRes = '{ "students" : [' +
+        //       '{ "firstName":"Michel" , "lastName":"John" ,"age":18},' +
+        //       '{ "firstName":"Richard" , "lastName":"Joe","age":20 },' +
+        //       '{ "firstName":"James" , "lastName":"Henry","age":15 } ]}';
+    //     $.ajax({
+    //     method: "GET",
+    //     url: "data/student.json",
+    //     dataType: "json",
+    //     success: function(data){
+    //         var studentObject = JSON.parse(data);
+    //         var bindHtml = "";
+    //         if (studentObject != null) {
+
+    //             bindHtml += "<table class='tblBorder style'>";
+    //             bindHtml += "<tr><th>FirstName</th><th>LastName</th><th>Age</th></tr>";
+    //             for (var i = 0; i < studentObject.students.length; i++) {
+    //                 bindHtml += "<tr style='text-align: center;'>";
+    //                 bindHtml += "<td>'" + studentObject.students[i]["firstName"] + "'</td>";
+    //                 bindHtml += "<td>'" + studentObject.students[i]["lastName"] + "'</td>";
+    //                 bindHtml += "<td>'" + studentObject.students[i]["age"] + "'</td>";
+    //                 bindHtml += "</tr>";
+    //             }
+    //             bindHtml = bindHtml + "</table>";
+    //             document.getElementById("tableContainer").innerHTML = bindHtml;
+    //         }
+    //     }
+    // })
+    </script>
+</body>
+</html>
