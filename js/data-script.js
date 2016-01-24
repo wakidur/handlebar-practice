@@ -1,18 +1,19 @@
-<script id="dropdown-item-template" type="text/x-handlebars-template">
-    <img src="images/{{EmployeeID}}.jpg" alt="{{EmployeeID}}" />
-    <h3>{{FirstName}} {{LastName}}</h3>
-    <p>{{Title}}</p>
-</script>
-<script id="grid-row-template" type="text/x-handlebars-template">
-    <tr data-uid="{{uid}}">
-        <td class="photo">
-            <img src="images/{{EmployeeID}}.jpg" alt="{{EmployeeID}}" />
-        </td>
-        <td class="details">
-            <span class="title">{{Title}}</span>
-            <span class="description">Name: {{ FirstName }} {{ LastName }}</span>
-            <span class="description">Country: {{ Country }} </span>
-        </td>
-        <td class="employeeID"> {{ EmployeeID }}</td>
-    </tr>
-</script>
+$(document).ready(function() {
+    $.ajax({
+        method: "GET",
+        url: "data/index1.json",
+        dataType: "json",
+        success: function(data){
+            var source   = $("#grid-row-template").html(),
+                template = Handlebars.compile(source);
+                var html = template( data );
+                $("#employeesTable").append(html);
+
+          // Render the posts into the page
+          // placeHolder.append(html);
+                
+        }
+    })
+                    
+                    
+});
