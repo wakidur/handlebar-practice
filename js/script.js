@@ -59,5 +59,24 @@ $( function() {
             $("#locationIp").html(template(data));    
         }
     });
-    
+    $.ajax({
+        method: "GET",
+        url: "data/people.json",
+        dataType: "json",
+        success: function(data){
+            var source   = $("#people-name").html(),
+                template = Handlebars.compile(source);
+            $("#peopleName").html(template(data));    
+        }
+    });
+    $.ajax({
+        method: "GET",
+        url: "data/student.json",
+        dataType: "json",
+        success: function(data){
+            var source   = $("#student").html(),
+                template = Handlebars.compile(source);
+            $("#studentInfo").html(template(data));    
+        }
+    });
 })

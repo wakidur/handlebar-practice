@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>jQuery Ajax Example with JSON Response</title>
+
+ 
+<!-- Write Javascript code here -->
+ 
+</head>
+<body>
+<h1>Hello how are you </h1>
+
+  <form method="post" action="">
+    <button value="all" type="submit">Get All Wines!</button>
+    <button value="red" type="submit">Get Red Wines!</button>
+    <button value="white" type="submit">Get White Wines!</button>
+  </form>
+    
+  <div id="wines">
+  <!-- Javascript will print data in here when we have finished the page -->
+  </div>
+<div id="cand"></div>
+<script src="lib/jquery-1.11.3.js"></script>
+
+<script>
+//     $(document).ready(function () {
+//     $.ajax({ 
+//         type: 'GET', 
+//         url: 'data/functions.php', 
+//         data: { get_param: 'value' }, 
+//         success: function (data) { 
+//             var names = data
+//             $('#cand').html(data);
+//         }
+//     });
+// });
+
+</script>
+<script type="text/javascript">
+$(document).ready(function(){
+  $(':submit').on('click', function() { // This event fires when a button is clicked
+    var button = $(this).val();
+    $.ajax({ // ajax call starts
+      url: 'hbTemplate/serverside.php', // JQuery loads serverside.php
+      data: 'button=' + $(this).val(), // Send value of the clicked button
+      dataType: 'json', // Choosing a JSON datatype
+    })
+    .done(function(data) { // Variable data contains the data we get from serverside
+      $('#wines').html(''); // Clear #wines div
+                
+      if (button == 'all') { // If clicked buttons value is all, we post every wine
+        for (var i in data.red) {
+          $('#wines').append('Red wine: ' + data.red[i] + '<br/>');
+        }
+        for (var i in data.white) {
+          $('#wines').append('White wine: ' + data.white[i] + '<br/>');
+        }
+      }
+      else if (button == 'red') { // If clicked buttons value is red, we post only red wines
+        for (var i in data) {
+          $('#wines').append('Red wine: ' + data[i] + '<br/>');
+        }
+      }
+      else if (button == 'white') { // If clicked buttons value is white, we post only white wines
+        for (var i in data) {
+          $('#wines').append('White wine: ' + data[i] + '<br/>');
+        }
+      }
+    });
+    return false; // keeps the page from not refreshing 
+  });
+});
+</script>
+ <script type="text/javascript">
+//     function CallService(sucessData) {
+//     $.ajax({
+//         // Add code for Cross Domain
+//         headers: getHeaders(),
+//         type: varType, //GET or POST or PUT or DELETE verb
+//         url: varUrl, // Location of the service
+//         data: varData, //Data sent to server
+//         contentType: varContentType, // content type sent to server
+//         dataType: varDataType, //Expected data format from server
+//         processdata: varProcessData, //True or False
+//         crossDomain: true,
+//         timeout: 200000,
+//         success: sucessData,
+//         error: function (xhr) {// When Service call fails
+//             alert("Error: " + xhr.responseText);
+//         }
+//     });
+// }
+ </script>
+
+
+</body>
+</html>

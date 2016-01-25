@@ -43,3 +43,21 @@
         {{/address}}
      </ol>
 </script>
+<script id="people-name" type="text/x-handlebars-template">
+  <ul>
+    {{#people}}
+      <li>{{name}}</li>
+    {{/people}}
+  </ul>
+  <p>{{group}}</script>
+</script>
+<script id="student" type="text/x-handlebars-template">
+  <ol>
+    {{#students}}
+      <li>Name: {{firstName}} , {{lastName}} Age: {{age}}</li>
+      
+    {{/students}}
+  </ol>
+  
+</script>
+
