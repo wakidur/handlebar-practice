@@ -49,7 +49,8 @@
       <li>{{name}}</li>
     {{/people}}
   </ul>
-  <p>{{group}}</script>
+  <p>{{group}}
+</script>
 </script>
 <script id="student" type="text/x-handlebars-template">
   <ol>
@@ -59,5 +60,12 @@
     {{/students}}
   </ol>
   
+</script>
+<script id="employees" type="text/x-handlebars-template">
+    <ol>
+        {{#employees}}
+           <li>{{firstName}} ---- {{lastName}}</li>
+        {{/employees}}
+    </ol>
 </script>
 

@@ -9,7 +9,7 @@
 </head>
 <body>
 <h1>Hello how are you </h1>
-
+<div id="id01"></div>
   <form method="post" action="">
     <button value="all" type="submit">Get All Wines!</button>
     <button value="red" type="submit">Get Red Wines!</button>
@@ -71,26 +71,52 @@ $(document).ready(function(){
   });
 });
 </script>
- <script type="text/javascript">
-//     function CallService(sucessData) {
-//     $.ajax({
-//         // Add code for Cross Domain
-//         headers: getHeaders(),
-//         type: varType, //GET or POST or PUT or DELETE verb
-//         url: varUrl, // Location of the service
-//         data: varData, //Data sent to server
-//         contentType: varContentType, // content type sent to server
-//         dataType: varDataType, //Expected data format from server
-//         processdata: varProcessData, //True or False
-//         crossDomain: true,
-//         timeout: 200000,
-//         success: sucessData,
-//         error: function (xhr) {// When Service call fails
-//             alert("Error: " + xhr.responseText);
-//         }
-//     });
-// }
- </script>
+ <script>
+  $.ajax({
+    method: "GET",
+    url: "data/myTutorials.txt",
+    success: function(data) {
+      myArr = JSON.parse( data );
+      myFunction(myArr);
+      function myFunction(arr) {
+        var out = "";
+        var i;
+        for(i = 0; i < arr.length; i++) {
+          out += '<a href="' + arr[i].url + '">' + 
+          arr[i].display + '</a><br>';
+        }
+        document.getElementById("id01").innerHTML = out;
+      }
+    },
+    error: function() {
+      console.log("Here are some problem")
+    }
+    
+  });
+   
+   
+//var xmlhttp = new XMLHttpRequest();
+//var url = "data/myTutorials.txt";
+//
+//xmlhttp.onreadystatechange = function() {
+//    if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
+//        var myArr = JSON.parse(xmlhttp.responseText);
+//        myFunction(myArr);
+//    }
+//};
+//xmlhttp.open("GET", url, true);
+//xmlhttp.send();
+//
+//function myFunction(arr) {
+//    var out = "";
+//    var i;
+//    for(i = 0; i < arr.length; i++) {
+//        out += '<a href="' + arr[i].url + '">' + 
+//        arr[i].display + '</a><br>';
+//    }
+//    document.getElementById("id01").innerHTML = out;
+//}
+</script>
 
 
 </body>

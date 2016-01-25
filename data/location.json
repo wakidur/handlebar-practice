@@ -18,26 +18,7 @@
                 "postcode":"6392",
                 "country":"Denmark",
                 "country_code":"dk"
-            },
-            {
-                "house_number":"6",
-                "road":"Bredhøjvej",
-                "village":"Bolderslev",
-                "county":"Aabenraa Municipality",
-                "state":"Region of Southern Denmark",
-                "postcode":"6392",
-                "country":"Denmark",
-                "country_code":"dk"
-            },
-            {
-                "house_number":"6",
-                "road":"Bredhøjvej",
-                "village":"Bolderslev",
-                "county":"Aabenraa Municipality",
-                "state":"Region of Southern Denmark",
-                "postcode":"6392",
-                "country":"Denmark",
-                "country_code":"dk"
             }
+            
         ]
    }

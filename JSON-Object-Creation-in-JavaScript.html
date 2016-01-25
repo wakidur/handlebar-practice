@@ -6,6 +6,7 @@
 
 <p id="demo"></p>
 <p id="demo1"></p>
+<p id="demo2"></p>
 <script src="lib/jquery-1.11.3.js"></script>
 <script>
 var text = '{ "name":"John Johnson", "street":"Oslo West 16", "phone":"555 1234567" }';
@@ -17,14 +18,30 @@ var text = '{ "name":"John Johnson", "street":"Oslo West 16", "phone":"555 12345
 </script>
 <script>
 var text = '{"employees":[' +
-'{"firstName":"John","lastName":"Doe" },' +
-'{"firstName":"Anna","lastName":"Smith" },' +
-'{"firstName":"Peter","lastName":"Jones" }]}';
+	'{"firstName":"John","lastName":"Doe" },' +
+	'{"firstName":"Anna","lastName":"Smith" },' +
+	'{"firstName":"Peter","lastName":"Jones" }]}';
 
 obj = JSON.parse(text);
 document.getElementById("demo1").innerHTML =
 obj.employees[1].firstName + " " + obj.employees[1].lastName;
 </script>
-
+<script>
+var employees = [
+    {
+    "firstName":"John",
+    "lastName":"Doe"
+    }, 
+    {
+    "firstName":"Anna",
+    "lastName":"Smith"
+    },
+    {
+    "firstName":"Peter",
+    "lastName":"Jones"
+    }
+];
+document.getElementById("demo2").innerHTML = employees[0].firstName + " " + employees[0].lastName;
+</script>
 </body>
 </html>
