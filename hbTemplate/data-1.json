@@ -1,0 +1,60 @@
+{
+	"city" : "London",
+	"street" : "Baker Street",
+	"number" : "2121B",
+	
+	
+	
+	
+	"descritption" : {
+		"escaped" : "Using {{}} Brackets will result in escaped HTML :",
+		"unescaped" : "Using {{{}}} will leave the context as it is",
+		"escape"  : "<p> Hello World! we are from Bangladesh",
+		"unescap" : "<h1> We are here for you </h1>"
+	},
+	"example" : "<button class=btn> Read More </button>",
+	
+	
+	
+	
+	
+	"people" : [
+		{ "firstName" : "Homer" , "lastName" : "Simpson"	},
+		{ "firstName" : "Peter" , "lastName" : "Griffin"	},
+		{ "firstName" : "Eric" , "lastName" : "Cartman"	},
+		{ "firstName" : "Kenny" , "lastName" : "McCormick"	},
+		{ "firstName" : "Bart" , "lastName" : "Saif Rolan"	},
+		{ "firstName" : "Handlebars" , "lastName" : "Context"	}
+	],
+	
+	
+	
+	"animals" : [
+		{
+			"name" : "cow" ,
+			"noise" : "moooo"
+		},
+		{
+			"name" : "cat" ,
+			"noise" : "meow"
+		},
+		{
+			"name" : "fish",
+			"noise" "fafa"
+		},
+		{
+			"name" : "farmer",
+			"noise" : "Get off my property!"
+		}
+		
+	]
+	
+	
+	
+	
+	
+	
+	
+	
+	
+}
