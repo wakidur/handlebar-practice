@@ -104,6 +104,8 @@
                         <div id="peopleName"></div>
                         <hr>
                         <div id="studentInfo"></div>
+                         <hr>
+                         <div id="employeesInfo"></div>
                           
                         
 
