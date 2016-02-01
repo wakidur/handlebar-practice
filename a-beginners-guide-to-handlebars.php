@@ -29,7 +29,20 @@
     <link href="css/style.css" rel="stylesheet">
     </head>
     <body>
+        <div id="content-placeholder1" class="nb"></div>
+        
         <div id="content-placeholder"></div>
+        <hr>
+        <div id="Expressions"></div>
+        <hr>
+        <div id="Escaping"></div>
+        <hr>
+        <div id="Comments"></div>
+        <hr>
+        <div id="Block"></div>
+        <hr>
+        <div id="Paths"></div>
+        
         
          <!-- Bootstrap core JavaScript
     ================================================== -->
