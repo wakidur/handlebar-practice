@@ -29,7 +29,31 @@
     <link href="css/style.css" rel="stylesheet">
     </head>
     <body>
+        <div id="content-placeholder1" class="nb"></div>
+        
         <div id="content-placeholder"></div>
+        <hr>
+        <div id="Expressions"></div>
+        <hr>
+        <div id="Escaping"></div>
+        <hr>
+        <div id="Comments"></div>
+        <hr>
+        <div id="Block"></div>
+        <hr>
+        <div id="Paths"></div>
+        <hr>
+        <div id="Each-helper"></div>
+        
+        <hr>
+        <div id="If-helper"></div>
+        <hr>
+        <div id="Custom-function-helper"></div>
+        <hr>
+        <div id="Custom-block-helper"></div>
+        <hr>
+        <div id="Partial-Templates"></div>
+        
         
          <!-- Bootstrap core JavaScript
     ================================================== -->
