@@ -25,7 +25,47 @@
             "firstName" : "John" ,
             "lastName" : "Doe"
          }
-    ]
+    ],
+    
+    "countries" : ["Russia", "India", "USA", "Bangladesh"],
+    "authorName" : [
+        { 
+            "firstName" : "Ritesh", 
+            "lastName":"Kumar"
+        },
+        {
+            "firstName": "John",
+            "lastName" : "Doe"
+        }
+    ],
+    
+    "companyName" : ["Probaze","ABC","GP"],
+    "company" : [],
+    
+    "students" : [
+        { "name" : "John" , "passingYear" : 2013 },
+        { "name" : "Dos" , "passingYear" : 2016}
+    ],
+    "office" : [
+        { "name" : "probaze" , "Year" : 2013 },
+        { "name" : "yahoo.com" , "Year" : 2018},
+        { "name" : "google.com" , "Year" : 1999},
+        { "name" : "mail.yahoo.com" , "Year" : 2016}
+    ],
+    
+    
+    "block" : [
+        { "name" : "function" , "passingYear" : 2013 },
+        { "name" : "yellow" , "passingYear" : 2014 },
+        { "name" : "template" , "passingYear" : 2018 }
+    ],
+     
+    "language" : "Handelbars",
+    "adjective" : "awasome"
+    
+    
+    
+    
     
 }
 

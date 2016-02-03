@@ -41,6 +41,62 @@ $(function(){
             var source = $('#handlebars-Paths').html(),
                 template = Handlebars.compile( source );
              $('#Paths').html( template( data ) );
+        //handlebars-Each-helper
+            var source = $('#handlebars-Each-helper').html(),
+                template = Handlebars.compile( source );
+             $('#Each-helper').html( template( data ) );
+            
+        //handlebars-If-helper
+            var source = $('#handlebars-If-helper').html(),
+                template = Handlebars.compile( source );
+             $('#If-helper').html( template( data ) );
+             
+        //handlebars-Custom-function-helper
+            Handlebars.registerHelper("studyStatus", function( passingYear ) {
+                if( passingYear < 2015 ) {
+                    return "passed";
+                } else {
+                    return "not passed";
+                }
+            });
+             Handlebars.registerHelper("stringText", function( name ) {
+                if(  name === "yahoo.com" || "" ) {
+                    return "yes that is compnay name";
+                } else {
+                    return "--------------------- ------";
+                }
+            });
+            var source = $('#handlebars-Custom-function-helper').html(),
+                template = Handlebars.compile( source );
+             $('#Custom-function-helper').html( template( data ) );
+             
+        //handlebars-Custom-block-helper
+        
+            Handlebars.registerHelper( "Block", function( value, options ) {
+                var lan = value.length;
+                var returnData = "";
+                for( var i = 0; i < lan ; i++ ) {
+                    //change the value of the passingYear to passed/not passed based on the conditions
+                    value[i].passingYear = ( value[i].passingYear < 2015 ) ? "passed " : "not Passed";
+                    //Hear options.fn(value[i]) temporarily change the scope of the whole studystatus helper block
+                    // to value[i] . so {{name}} = data[i].name
+                    // in the template.
+                    returnData = returnData + options.fn(value[i]);
+                }
+                return returnData;
+            });
+            
+            var source = $('#handlebars-Custom-block-helper').html(),
+                template = Handlebars.compile( source );
+             $('#Custom-block-helper').html( template( data ) );
+             
+        //handlebars-Partial-Templates
+            Handlebars.registerPartial(
+                    "partialTemplate", 
+                    '{{language}} is {{adjective}}. You are reading this article on {{website}}');      
+            var source = $('#handlebars-Partial-Templates').html(),
+                template = Handlebars.compile( source );
+             $('#Partial-Templates').html( template( data ) );
             
         },
         error: function(){

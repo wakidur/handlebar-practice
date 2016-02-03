@@ -47,4 +47,98 @@
         {{/each}}
     </div>
 </script>
+<script id="handlebars-Each-helper" type="text/x-handlebars-template">
+    {{!-- handlebars-Each-helper --}}
+    <div class="hello">
+    <h2>handlebars-Each-helper</h2>
+        {{#each countries}}
+            <ul>
+                <li> <a href"{{this}}.com">{{this}}</a></li>
+            </ul>
+        {{/each}}
+        {{#each authorName}}
+            <ol>
+                <li>{{firstName}} --- {{lastName}}</li>
+            </ol>
+        {{/each}}
+    </div>
+    <div class="hello">
+    <h2>handlebars-Each-helper. The index of the array’s element can be rendered by using {{@index}}</h2>
+        {{#each countries}}
+            <ul>
+                <li> <a href"{{this}}.com">{{@index}} : {{this}}</a></li>
+            </ul>
+        {{/each}}
+        {{#each authorName}}
+            <ol>
+                <li>Name :{{@index}} : {{this.firstName}}  --- {{this.lastName}}</li>
+            </ol>
+        {{/each}}
+    </div>
+</script>
+<script id="handlebars-If-helper" type="text/x-handlebars-template">
+    
+    {{!-- handlebars-If-helper --}}
+    <div class="hello">
+        <h2>handlebars-If-helper</h2>
+        {{#if companyName}}
+            The company Name are present. <br>
+                {{#each companyName}}
+                   {{@index}} : {{this}} <br>
+                {{/each}} 
+        {{else}}
+            The  company Name are not present.
+        {{/if}}
+        
+        {{#if company}}
+            The  company  are present. <br>
+                {{#each company}}
+                   {{@index}} : {{this}} <br>
+                {{/each}} 
+        {{else}}
+            The  company  are not present.
+        {{/if}}
+            
+            
+    </div>
+</script>
+<script id="handlebars-Custom-function-helper" type="text/x-handlebars-template"> 
+    {{!-- handlebars-Custom-function-helper --}}
+    <div class="hello">
+        <h2>handlebars-Custom-function-helper</h2>
+        {{#each students}}
+        {{name}} has <strong> {{studyStatus passingYear}} </strong>{{passingYear}} .<br>
+        {{/each}} 
+                
+        {{#each office}}
+            {{name}} has <strong> {{ Year}} </strong> .<br>
+           {{ stringText name}} has <strong> {{Year}} </strong>{{passingYear}} .<br>
+        {{/each}}   
+                
+                
+    </div>
+</script>
+<script id="handlebars-Custom-block-helper" type="text/x-handlebars-template"> 
+    {{!-- handlebars-Custom-block-helper --}}
+    <div class="hello">
+        <h2>handlebars-Custom-block-helper</h2>
+        {{#Block block }}
+            {{name}} has <strong> {{passingYear}} </strong> .<br>
+        {{/Block}}          
+    </div>
+</script>
+
+<script id="handlebars-demo" type="text/x-handlebars-template">
+  {{> partialTemplate website="sitepoint"}}<br>
+  {{> partialTemplate website="www.sitepoint.com"}}
+</script>
+<script id="handlebars-Partial-Templates" type="text/x-handlebars-template"> 
+    {{!-- handlebars-Partial-Templates --}}
+    <div class="hello">
+        <h2>handlebars-Partial-Templatesr</h2>
+        {{> partialTemplate website="sitepoint"}} <br>
+        {{> partialTemplate website="www.sitepoint.com"}}         
+    </div>
+</script>
+
  

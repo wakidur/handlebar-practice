@@ -42,6 +42,17 @@
         <div id="Block"></div>
         <hr>
         <div id="Paths"></div>
+        <hr>
+        <div id="Each-helper"></div>
+        
+        <hr>
+        <div id="If-helper"></div>
+        <hr>
+        <div id="Custom-function-helper"></div>
+        <hr>
+        <div id="Custom-block-helper"></div>
+        <hr>
+        <div id="Partial-Templates"></div>
         
         
          <!-- Bootstrap core JavaScript
