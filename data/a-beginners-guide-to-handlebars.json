@@ -61,8 +61,11 @@
     ],
      
     "language" : "Handelbars",
-    "adjective" : "awasome"
+    "adjective" : "awasome",
     
+    
+    "precompileationName" : "Ritesh Kumar",
+    "precompileatonOccupation" : "Developer"
     
     
     

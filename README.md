@@ -25,9 +25,38 @@ For better understanding this topic, we’ll employ the example below in which w
 
 6. Helpers : Even though Handlebars is a logic-less templating engine, it can execute simple logics using helpers. A Handlebars helper is a simple identifier that may be followed by parameters (separated by a space), as shown below:
    
-        Custom Helpers : You can create your own helper to perform complex logics using the expression system theat Handlebars provides. There are two kinds of helper: function Helper and block helper. The first definition is meant for a single expression, while the latter is used for block expression.
+         Custom Helpers : You can create your own helper to perform complex logics using the expression system theat Handlebars provides. There are two kinds of helper: function Helper and block helper. The first definition is meant for a single expression, while the latter is used for block expression.
  
-      Custom function helper : The syntax for a function helper is {{helperName parameter1 parameter2 ...}}. To better understand how to proceed with the implementation, let’s create a function helper called studyStatus which returns a string that will be “passed” if passingYear < 2015 and “not passed” if passingYear >= 2015:
+      A. Custom function helper : The syntax for a function helper is {{helperName parameter1 parameter2 ...}}. To better understand how to proceed with the implementation, let’s create a function helper called studyStatus which returns a string that will be “passed” if passingYear < 2015 and “not passed” if passingYear >= 2015:
     
-     Custom block helper : Custom block helpers are used in the same way as function helpers, but the syntax is a bit different. The syntax of block            helpers is:
+     B. Custom block helper : Custom block helpers are used in the same way as function helpers, but the syntax is a bit different. The syntax of block  helpers is
 
+7. Partial Templates: Handlebars partial are templats that can be shared among  different templates. They are written as {{ > partialName}}. 
+
+8. handlebars-precompilation-demo
+
+A demo to show how handlebars precompilation works
+
+    keep all the template files with .handlebars extension inside the templates folder.
+    In the root folder run handlebars templates/ -f templatesCompiled.js
+     handlebars path/to/folder-of-templates -f fpath/to/folder-of-templates/filename.js
+    You will get a compiled templatesCompiled.js in the root directory.
+    Insert the runtime handlebars and the compiled js file
+
+    <script src="handlebars.runtime.js"></script>
+    <script src="path/to/templatesCompiled.js"></script>
+
+        Access the template of demo.handlebars by using
+
+    var context = {
+        "name":"Ritesh Kumar",
+        "occupation" : "Developer"
+    }
+
+    var templateScript = Handlebars.templates.demo(context);
+
+    $(body).append(templateScript);
+
+        Run index.html on the browser to see the resultant html.
+
+    That's it.

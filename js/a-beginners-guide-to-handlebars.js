@@ -97,6 +97,10 @@ $(function(){
             var source = $('#handlebars-Partial-Templates').html(),
                 template = Handlebars.compile( source );
              $('#Partial-Templates').html( template( data ) );
+             
+        //handlebars-Precompilation
+            var templateScritp = Handlebars.templates.demo( data );
+             $('#Precompilation').html( templateScritp );
             
         },
         error: function(){
