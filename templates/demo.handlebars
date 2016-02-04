@@ -1,0 +1,15 @@
+<div>
+  My name is {{name}}. I am a {{occupation}}.
+</div>
+<div>
+    <ol>
+        {{#each office}}
+            <li> {{name}} -- {{Year}}</li>
+        {{/each}}
+    </ol>
+    <ul>
+        {{#each authorName}}          
+            <li>Name :{{@index}} : {{this.firstName}}  --- {{this.lastName}}</li>       
+        {{/each}}
+    </ul>
+</div>

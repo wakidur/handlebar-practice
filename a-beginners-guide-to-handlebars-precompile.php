@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html>
     <head>
@@ -29,44 +28,19 @@
     <link href="css/style.css" rel="stylesheet">
     </head>
     <body>
-        <div id="content-placeholder1" class="nb"></div>
-        
-        <div id="content-placeholder"></div>
-        <hr>
-        <div id="Expressions"></div>
-        <hr>
-        <div id="Escaping"></div>
-        <hr>
-        <div id="Comments"></div>
-        <hr>
-        <div id="Block"></div>
-        <hr>
-        <div id="Paths"></div>
-        <hr>
-        <div id="Each-helper"></div>
         
         <hr>
-        <div id="If-helper"></div>
-        <hr>
-        <div id="Custom-function-helper"></div>
-        <hr>
-        <div id="Custom-block-helper"></div>
-        <hr>
-        <div id="Partial-Templates"></div>
-        <hr>
-        
+        <div id="Precompilation"></div>
         
         
          <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="lib/jquery-1.11.3.js"></script>
-    <script src="lib/bootstrap.js"></script>
-    <script src="lib/handlebars-v4.0.5.js"></script>
-    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-    <script src="lib/ie10-viewport-bug-workaround.js"></script>
-    <script src="js/a-beginners-guide-to-handlebars.js"></script>
+    <script src="lib/handlebars.runtime.js"></script>
+    <script src="js/precompile1.js"></script>
+    <script src="js/a-beginners-guide-to-handlebars-precompiletion.js"></script>
     
     </body>
 </html>
-<?php include 'hbTemplate/a-beginners-guide-to-handlebars.php';?>
+
