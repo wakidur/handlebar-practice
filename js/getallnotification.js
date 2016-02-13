@@ -40,6 +40,46 @@ $(function(){
         }
     })
 }
+ // If a panel element has the ".panel-scroller" class we init
+      // custom fixed height content scroller. An optional delay data attr
+      // may be set. This is useful when you expect the panels height to 
+      // change due to a plugin or other dynamic modification.
+      var panelScroller = $('.panel-scroller');
+      if (panelScroller.length) {
+          panelScroller.each(function(i, e) {
+           var This = $(e);
+           var Delay = This.data('scroller-delay');
+           var Margin = 5;
+
+           // Check if scroller bar margin is required
+           if (This.hasClass('scroller-thick')) { Margin = 0; }
+
+           // Check if scroller bar is in a dropdown, if so 
+           // we initilize scroller after dropdown is visible
+           var DropMenuParent = This.parents('.dropdown-menu');
+           if (DropMenuParent.length) { 
+               DropMenuParent.prev('.dropdown-toggle').on('click', function() {
+                  setTimeout(function() {
+                     This.scroller();
+                     //$('.navbar').scrollLock('on', 'div');
+                  },50);
+               });
+               return;
+           }
+
+           if (Delay) {
+             var Timer = setTimeout(function() {
+                This.scroller({ trackMargin: Margin, });
+               $('#content').scrollLock('on', 'div');
+             }, Delay);
+           } 
+           else {
+             This.scroller({ trackMargin: Margin, });
+             $('#content').scrollLock('on', 'div');
+           }
+
+         });
+      }
 })
 
 

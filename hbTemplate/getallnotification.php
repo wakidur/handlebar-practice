@@ -1,7 +1,7 @@
 <script id="hb-noti-items" type="text/x-handlebars-template">
     <li class="media">
         <a class="media-left" href="{{id}}" target="_blank">
-            <img src="{{actionBy.profilePic}}" class="media-object mn thumbnail thumbnail-sm rounded mw50">
+            <img src="images/{{actionBy.profilePic}}" class="media-object mn thumbnail thumbnail-sm rounded mw50">
         </a>
         <div class="media-body">
             <h5 class="media-heading">

@@ -8,20 +8,49 @@
 
     <!-- Bootstrap core CSS -->
     <link href="css/theme.css" rel="stylesheet">
+    <!--<link href="css/bootstrap.css" rel="stylesheet">-->
     <link href="fonts/font-awesome/font-awesome.css" rel="stylesheet">
-
+    <style>
+        /*
+ * jQuery Plugin: Scroller
+ * Version 0.3
+ *
+ * Copyright (c) 2011 Shilov Vlad [Omgovich] (http://omgovich.ru)
+ * No copyrights or licenses. Do what you want!
+ * 
+ */
+            .slide-pane, .vertical-slide-pane {
+                    position:relative;
+                    overflow:hidden;
+            }
+            .slide-pane .slide-wrap {
+                    position:relative;
+                    width:10000px;
+            }
+            .vertical-slide-pane .slide-wrap {
+                    position:relative;
+                    height:10000px;
+            }
+            .slide-pane .slide-data {
+                    position:absolute;
+                    left:0;
+            }
+            .vertical-slide-pane .slide-data {
+                    position:absolute;
+                    top:0;
+            }
+    </style>
     </head>
     <body>
        <header class="navbar navbar-fixed-top bg-danger">
     <div class="container">
-        <div class="navbar-header">
-            <ul class="nav navbar-nav ">
+        <div class="navbar-header"></div>
+            <ul class="nav navbar-nav">
                 <li><a href="">Home</a></li>
                 <li><a href="">about</a></li>
 
                 
             </ul>
-           
             <ul class="nav navbar-nav navbar-right">
                 <li class="dropdown">
                     <div class="navbar-btn btn-group">
@@ -70,6 +99,8 @@
     <script src="lib/handlebars-v4.0.5.js"></script>
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <script src="lib/ie10-viewport-bug-workaround.js"></script>
+    <script src="lib/jquery.scroller.js"></script>
+    <script src="lib/jquery-scrollLock.js"></script>
     <script src="js/getallnotification.js"></script>
         <?php include 'hbTemplate/getallnotification.php';?>
     </body>
