@@ -1,0 +1,23 @@
+{
+    "people" :[
+        { 
+            "firstName" : "Yehuda", 
+            "lastName" : "Katz",
+            "dob" : "01/05/1999",
+            "address" : "Uttara , Dhaka 1230 "
+        },
+        { 
+            "firstName" : "Carl", 
+            "lastName" : "Lerche",
+            "dob" : "01/05/1998",
+            "address" : "Uttara , Dhaka 1230 "
+        },
+        { 
+            "firstName" : "Alan", 
+            "lastName" : "Lerche",
+            "dob" : "01/05/1970",
+            "address" : "Uttara , Dhaka 1230 "
+        }
+        
+    ]
+}
