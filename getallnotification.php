@@ -39,6 +39,10 @@
                     position:absolute;
                     top:0;
             }
+            .top-margin{
+                margin-top: 60px;
+            }
+            
     </style>
     </head>
     <body>
@@ -91,6 +95,15 @@
         
         
         
+<div class="container top-margin">
+    <div class="row panel col-xs-12">
+        <div id="requests" class="pull-left"></div>
+    </div>
+</div>
+
+        
+        
+        
          <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
@@ -102,6 +115,11 @@
     <script src="lib/jquery.scroller.js"></script>
     <script src="lib/jquery-scrollLock.js"></script>
     <script src="js/getallnotification.js"></script>
+    <script>
+        $(function () {
+            loadFriendRequest();
+        });
+    </script>
         <?php include 'hbTemplate/getallnotification.php';?>
     </body>
 </html>

@@ -1603,6 +1603,7 @@ pre code {
     width: 1170px;
   }
 }
+
 .container-fluid {
   padding-right: 15px;
   padding-left: 15px;
@@ -2249,6 +2250,8 @@ pre code {
     margin-left: 0;
   }
 }
+
+
 table {
   background-color: transparent;
 }

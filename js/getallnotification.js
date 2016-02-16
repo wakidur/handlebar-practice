@@ -83,3 +83,46 @@ $(function(){
 })
 
 
+
+function loadFriendRequest() {
+    $.ajax({
+        method: "POST",
+        dataType: 'JSON',
+        url: "data/friend-request.json",
+        success: function (response) {
+            if (response.length > 0) {
+
+                $.each(eval(response), function (i, v) {
+                    var source = $("#hb-fr-items").html();
+                    var temp = Handlebars.compile(source);
+                    $('#requests').before(temp(v));
+
+                })
+            } else {
+                $('#requests').html("<h3>No Friend Request Found.</h3>");
+            }
+
+        }
+    })
+}
+
+function rejectRequest( requestId ) {
+    $.ajax({
+        method: "POST",
+        dataType: 'JSON',
+        url: "data/friend-request.json",
+        data: {
+            requestId: requestId,
+            type: 'post'
+        },
+        success: function ( response ) {
+            if (response.success == true) {
+                location.reload();
+            } else {
+                flashMsg(response.msg,'error')
+            }
+
+        }
+    })
+}
+
