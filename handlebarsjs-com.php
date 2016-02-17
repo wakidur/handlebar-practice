@@ -20,6 +20,11 @@
                         <div class="panel-body">
                             <div id="BlockExpression-1"></div>
                             <hr>
+                            <div id="BlockExpression-2"></div>
+                            <hr>
+                            <div id="Handlebars-Paths-1"></div>
+                            <hr>
+                            <div id="Handlebars-Pathss-2"></div>
                             
                         </div>
                         <div class="panel-footer">
@@ -41,6 +46,18 @@
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <script src="lib/ie10-viewport-bug-workaround.js"></script>
     <script src="js/handebarsjs-com.js"></script>
+    
+    <script>
+        $( function(){
+            loadBlocks2();
+            
+        });
+        $( function(){
+            
+            handlebarsPath1();
+            handlebarsPath2();
+        })
+    </script>
     <?php include 'hbTemplate/handlebarsjs-com.php';?>
     </body>
 </html>

@@ -19,5 +19,42 @@
             "address" : "Uttara , Dhaka 1230 "
         }
         
-    ]
+    ],
+    
+    
+    "authore" : {
+        "firstName" : "Alan",
+        "lastName" : "Johnson"
+    },
+    "body" : "I Love Handlebars",
+    "comments" : [
+        {
+            "authore" : {
+                "firstName" : "Yehuda",
+                "lastName" : "katz"
+            } ,
+            "body" : "Me too!"
+        }
+    ],
+    
+    
+    
+   
+    
+    "description" : "My First Blog Post!",
+    "student" : {
+        "id" : 45,
+        "name" : "Handlebars supports"
+    },
+    "bodys" : "My first post. Wheeeeeeeeeeeeee!",
+    
+    
+    
+    
+    "occupation" : "developer",
+    "website" : {
+        "name" : "sitepoint",
+        "id" : 12
+    },
+    "country" : "Bangladesh"
 }
